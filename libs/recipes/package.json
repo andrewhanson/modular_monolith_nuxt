@@ -1,7 +1,8 @@
 {
-  "name": "@app/web",
+  "name": "@app/recipes",
   "private": true,
   "type": "module",
+  "main": "./nuxt.config.ts",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,12 +11,11 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@app/api": "workspace:^",
-    "@app/auth": "workspace:^",
-    "@app/recipes": "workspace:^",
-    "@app/ui": "workspace:^",
     "nuxt": "^3.11.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@app/ui": "workspace:^"
   }
 }

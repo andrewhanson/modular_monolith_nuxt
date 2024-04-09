@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   ssr: false, 
   extends: [
     "@app/ui",
-    "@app/auth"
+    "@app/auth",
+    "@app/recipes"
   ],
 })
