@@ -8,14 +8,14 @@
       :rounded="false"
     >
       <v-card-actions>
+        <h3>Recipes</h3>
+        <v-spacer/>
         <v-btn
           size="small"
           density="compact"
           @click="emit('update:drawer', false)"
           icon="mdi-menu"
         ></v-btn>
-        <v-spacer></v-spacer>
-       
       </v-card-actions>
       <v-card-text>
         <v-list-item-subtitle>Admin Settings</v-list-item-subtitle>

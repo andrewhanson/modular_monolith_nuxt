@@ -8,6 +8,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify']
   },
+  components: [
+    { path: '@app/ui/components', prefix: 'ui-' }
+  ],
   modules: [
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {

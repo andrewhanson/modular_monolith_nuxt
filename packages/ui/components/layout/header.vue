@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app tile rounded="false"  elevation="1" density="compact">
+  <v-app-bar app tile rounded="false"  elevation="1" density="compact" v-if="showDrawer">
     <v-app-bar-nav-icon 
       v-if="showDrawer"
       icon="mdi-menu"
@@ -7,11 +7,11 @@
       size="small"
       @click="$emit('update:drawer', !drawer)"
     ></v-app-bar-nav-icon>
-    <v-app-bar-title>
+    <v-app-bar-title v-if="showDrawer">
       <h4 @click="goHome" class="title"><a href="/">Recipes</a></h4>
     </v-app-bar-title>
     <v-spacer></v-spacer>
-    <TklsLoginButton/>
+    <!-- <TklsLoginButton/> -->
   </v-app-bar>
 </template>
 
