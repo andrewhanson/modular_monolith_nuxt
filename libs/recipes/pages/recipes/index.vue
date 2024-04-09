@@ -1,6 +1,6 @@
 <template>
   <div>
     <h1>Recipes</h1>
-    <p>From UI module</p>
+    <p>From Recipes module</p>
   </div>
 </template>

@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   extends: [
     "@app/ui",
     "@app/auth",
+    "@app/users",
     "@app/recipes"
   ],
 })
