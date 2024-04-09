@@ -11,7 +11,7 @@
       <h4 @click="goHome" class="title"><a href="/">Goldilocks's Perfect Porridge</a></h4>
     </v-app-bar-title>
     <v-spacer></v-spacer>
-    <!-- <TklsLoginButton/> -->
+    <slot/>
   </v-app-bar>
 </template>
 
