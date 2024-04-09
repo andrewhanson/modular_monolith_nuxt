@@ -1,7 +1,8 @@
 {
-  "name": "@app/web",
+  "name": "@app/auth",
   "private": true,
   "type": "module",
+  "main": "./nuxt.config.ts",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,12 +10,13 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "devDependencies": {
+    "nuxt": "^3.8.2",
+    "vue": "^3.3.10",
+    "vue-router": "^4.2.5"
+  },
   "dependencies": {
-    "@app/api": "workspace:^",
-    "@app/auth": "workspace:^",
-    "@app/ui": "workspace:^",
-    "nuxt": "^3.11.2",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "@auth0/auth0-vue": "^2.3.3",
+    "@app/ui": "workspace:^"
   }
 }

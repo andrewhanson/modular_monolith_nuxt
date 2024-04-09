@@ -9,6 +9,8 @@
       </v-col>
     </v-row>
 
+    <!-- <auth-login-button/> -->
+
   </v-container>
 </template>
 

@@ -6,7 +6,6 @@ const recipeApi = {
     return await Promise.resolve(recipe);
   },
   get: async () => {
-    console.log('GET recipe data', sampleData)
     return await Promise.resolve(sampleData);
   }
 

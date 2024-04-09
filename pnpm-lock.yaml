@@ -23,6 +23,9 @@ importers:
       '@app/api':
         specifier: workspace:^
         version: link:../../packages/api
+      '@app/auth':
+        specifier: workspace:^
+        version: link:../../packages/auth
       '@app/ui':
         specifier: workspace:^
         version: link:../../packages/ui
@@ -47,6 +50,25 @@ importers:
       typescript:
         specifier: ^4.4.3
         version: 4.9.5
+
+  packages/auth:
+    dependencies:
+      '@app/ui':
+        specifier: workspace:^
+        version: link:../ui
+      '@auth0/auth0-vue':
+        specifier: ^2.3.3
+        version: 2.3.3(typescript@5.4.4)(vue-router@4.3.0)
+    devDependencies:
+      nuxt:
+        specifier: ^3.8.2
+        version: 3.11.2(@types/node@16.18.96)(@unocss/reset@0.59.0)(floating-vue@5.2.2)(typescript@5.4.4)(unocss@0.59.0)(vite@5.2.8)
+      vue:
+        specifier: ^3.3.10
+        version: 3.4.21(typescript@5.4.4)
+      vue-router:
+        specifier: ^4.2.5
+        version: 4.3.0(vue@3.4.21)
 
   packages/ui:
     dependencies:
@@ -87,6 +109,25 @@ packages:
 
   /@antfu/utils@0.7.7:
     resolution: {integrity: sha512-gFPqTG7otEJ8uP6wrhDv6mqwGWYZKNvAcCq6u9hOj0c+IKCEsY4L1oC9trPq2SaWIzAfHvqfBDxF591JkMf+kg==}
+
+  /@auth0/auth0-spa-js@2.1.3:
+    resolution: {integrity: sha512-NMTBNuuG4g3rame1aCnNS5qFYIzsTUV5qTFPRfTyYFS1feS6jsCBR+eTq9YkxCp1yuoM2UIcjunPaoPl77U9xQ==}
+    dev: false
+
+  /@auth0/auth0-vue@2.3.3(typescript@5.4.4)(vue-router@4.3.0):
+    resolution: {integrity: sha512-xL6R2nriWynA4Cp75NqtGjSWNx+JbhPMMffSsfDxf/glYfj7Q9kn1DIqnTp+ZrjzyV3kcUj7x0yCYW0yi3t+rg==}
+    peerDependencies:
+      vue-router: ^4.0.12
+    peerDependenciesMeta:
+      vue-router:
+        optional: true
+    dependencies:
+      '@auth0/auth0-spa-js': 2.1.3
+      vue: 3.4.21(typescript@5.4.4)
+      vue-router: 4.3.0(vue@3.4.21)
+    transitivePeerDependencies:
+      - typescript
+    dev: false
 
   /@babel/code-frame@7.24.2:
     resolution: {integrity: sha512-y5+tLQyV8pg3fsiln67BVLD1P13Eg4lh5RW9mF0zUuvLrv9uIQ4MCL+CRT+FTsBlBjcIan6PGsLcBN0m3ClUyQ==}
